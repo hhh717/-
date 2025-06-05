@@ -112,9 +112,6 @@ df['internet_quality'] = df['internet_quality'].map(internet_mapping)
 df['family_income_range'] = df['family_income_range'].map(family_income_mapping)
 df['parental_education_level'] = df['parental_education_level'].map(parental_edu_mapping)
 
-print("\n预处理后的数据集前5行:")
-display(df.head())
-
 # ======================
 # 2. 特征工程（基于教育心理学理论）
 # ======================
