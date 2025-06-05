@@ -26,9 +26,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 # 数据获取与基本情况
 # 注意：实际使用时需要Kaggle账号和API密钥
-od.download("https://www.kaggle.com/datasets/aryan208/student-habits-and-academic-performance-dataset")
-file =('student-habits-and-academic-performance-dataset/enhanced_student_habits_performance_dataset/enhanced_student_habits_performance_dataset.csv')
-df= pd.read_csv(file)
+df= pd.read_csv("src/enhanced_student_habits_performance_dataset.csv")
 df.head()
 
 
