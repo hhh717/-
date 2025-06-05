@@ -191,7 +191,7 @@ new_features = [
 # 仅显示存在的特征
 existing_features = [f for f in new_features if f in df.columns]
 if existing_features:
-    display(df[existing_features].head())
+    print(df[existing_features].head())
 
 # 特征相关性分析
 plt.figure(figsize=(20, 15))
@@ -247,7 +247,7 @@ models = {
     'Decision Tree': DecisionTreeRegressor(random_state=42),
     'Random Forest': RandomForestRegressor(random_state=42, n_jobs=-1),
     'SVR': SVR(),
-    'KNN': KNeighborsRegressor(n_jobs=-1),
+    'KNN': KNeighborsRegressor(n_jobs=-1)
 }
 
 # 训练和评估模型
