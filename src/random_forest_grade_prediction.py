@@ -32,10 +32,10 @@ df.head()
 
 print("数据集形状:", df.shape)
 print("\n数据集前5行:")
-display(df.head())
+print(df.head().to_csv(sep='\t', na_rep='nan'))
 
 print("\n数据集描述性统计:")
-display(df.describe())
+print(df.describe())
 
 # 缺失值处理
 print("\n原始缺失值统计:")
@@ -192,7 +192,7 @@ new_features = [
     'motivation_composite', 'gpa_growth_potential', 'learning_efficiency',
     'academic_resilience', 'focus_motivation_interaction'
 ]
-display(df[new_features].head())
+print(df[new_features].head())
 
 # 特征相关性分析
 plt.figure(figsize=(20, 15))
