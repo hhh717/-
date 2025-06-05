@@ -21,8 +21,8 @@ jobs:
       
       - name: Debug - List files and permissions
         run: |
+          pwd
           ls -la src/
-          cat src/random_forest_grade_prediction.py | head -n 5  # 检查文件头部
       
       - name: Run script with Python interpreter
-        run:  src/random_forest_grade_prediction.py
+        run: python src/random_forest_grade_prediction.py  # 关键修改点
