@@ -362,15 +362,6 @@ final_rmse = np.sqrt(mean_squared_error(y_test, y_pred_rf))
 final_mae = mean_absolute_error(y_test, y_pred_rf)
 print(f"优化后的随机森林 - RMSE: {final_rmse:.4f}, MAE: {final_mae:.4f}, R²: {final_r2:.4f}")
 
-# 将优化后的模型添加到结果比较中
-optimized_result = {
-    'Model': 'Optimized RF',
-    'RMSE': final_rmse,
-    'MAE': final_mae,
-    'R²': final_r2,
-    'CV R² Mean': optimizer.max['target']
-}
-results_df =pd.concat([results_df,optimized_result], ignore_index=True)
 
 # 特征重要性分析
 feature_importances = best_rf.feature_importances_
