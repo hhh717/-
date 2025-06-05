@@ -17,15 +17,11 @@ from bayes_opt import BayesianOptimization
 import warnings
 warnings.filterwarnings('ignore')
 
-plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.rcParams['axes.unicode_minus'] = False  
-
 # ======================
 # 1. 数据预处理
 # ======================
 
 # 数据获取与基本情况
-# 注意：实际使用时需要Kaggle账号和API密钥
 df= pd.read_csv("src/enhanced_student_habits_performance_dataset.csv")
 df.head()
 
