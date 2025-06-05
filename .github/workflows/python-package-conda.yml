@@ -15,4 +15,4 @@ jobs:
       with:
         python-version: '3.10'
     - name: Run code
-      run: random_forest_grade_prediction.py
+      run: src/random_forest_grade_prediction.py
