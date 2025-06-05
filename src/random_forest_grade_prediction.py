@@ -370,7 +370,7 @@ optimized_result = {
     'R²': final_r2,
     'CV R² Mean': optimizer.max['target']
 }
-results_df = results_df.append(optimized_result, ignore_index=True)
+results_df =pd.concat([results_df,optimized_result], ignore_index=True)
 
 # 特征重要性分析
 feature_importances = best_rf.feature_importances_
