@@ -1,8 +1,0 @@
-opendatasets
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-bayesian-optimization
-xgboost
