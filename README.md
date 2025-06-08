@@ -129,20 +129,6 @@ def identify_intervention_points(df):
 ![学生问题分布图](https://github.com/user-attachments/assets/447344c3-bc91-415f-adcf-f3a250bc3ce5)
 
 
-## 文件结构
-```
-student_performance_analysis/
-├── data/  # 数据集存储位置
-│   └── enhanced_student_habits_performance_dataset.csv
-├── outputs/  # 生成的可视化结果
-│   ├── feature_importance.png
-│   ├── prediction_vs_actual.png
-│   ├── error_distribution.png
-│   └── intervention_distribution.png
-├── student_performance_analysis.py  # 主程序
-└── README.md  # 本文档
-```
-
 ## 定制化扩展
 1. **调整干预阈值**：修改`identify_intervention_points`函数中的成绩阈值（默认70分）
 2. **增加新特征**：在特征工程部分添加新的综合指标
